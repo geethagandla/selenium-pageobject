@@ -8,7 +8,7 @@ import com.selenium.pageobject.selenium_pageobject.pages.LoginPage;
 
 public class LoginTest extends BaseDriver {
 	
-	@Test
+	@Test(priority = 1)
 	public void loginTest(){
 		HomePage homePage= new HomePage(driver);
 		homePage.clickOnLogin();
