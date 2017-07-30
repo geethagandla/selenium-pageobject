@@ -21,10 +21,11 @@ public class HomePage {
 		 PageFactory.initElements(driver, this);
 	 }
 	
-	public void clickOnLogin() {
+	public LoginPage clickOnLogin() {
 		WebDriverWait wait = new WebDriverWait(driver, 10000);
 		wait.until(ExpectedConditions.elementToBeClickable(login));
 		login.click();
+		return new LoginPage(driver);
 	}
 	 
 

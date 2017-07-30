@@ -11,12 +11,12 @@ public class LoginTest extends BaseDriver {
 	@Test(priority = 1)
 	public void loginTest(){
 		HomePage homePage= new HomePage(driver);
-		homePage.clickOnLogin();
-		LoginPage login=new LoginPage(driver);
+		LoginPage login=homePage.clickOnLogin();
 		login.login("hdfvvgvf", "hhhhhhh");
-		Assert.assertTrue(login.errormsg.isDisplayed());
-		
+		Assert.assertTrue(login.errormsg.isDisplayed(), "Error message element not found");
 	}
+	
+	
 	
 	
 }
