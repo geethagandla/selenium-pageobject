@@ -4,7 +4,7 @@ Sample Selenium project with page object model
 
 TODO:
 TestNg:
-
+ * [X] add sample test using page object model
  * [] with priority
  * [] with depends on(one test depends on other test) [Ex: My profile Test depends on login test]
       resource: https://www.tutorialspoint.com/testng/testng_dependency_test.htm
